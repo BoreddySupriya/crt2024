@@ -1,0 +1,10 @@
+#include <stdio.h>
+void fun()
+{
+    printf("Good morning\n");
+    fun();
+}
+int main()
+{
+    fun();
+}
