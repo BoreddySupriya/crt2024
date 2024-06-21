@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+    
+
+    
+int age,weight;
+        age=s.nextInt();
+        weight=s.nextInt();
+    float hemoglobin;
+        hemoglobin=s.nextFloat();
+    
+    if(age>=18 && weight>=45 && hemoglobin>=5.5)
+    {
+        System.out.println("He or She can donate blood");
+        
+    }
+    else
+    {
+        System.out.println("He or She unable to donate blood");
+}
+   
+    }
+}
