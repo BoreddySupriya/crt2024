@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+Scanner s=new Scanner(System.in);
+    
+    int ncg,benper,bbper;
+    ncg=s.nextInt();
+        benper=s.nextInt();
+        bbper=s.nextInt();
+        
+
+        
+    int ben_share=ncg*benper/100;
+    ncg=ncg-ben_share;
+    int bb_share=ncg*bbper/100;
+    ncg=ncg-bb_share;
+    int p_share=ncg/3;
+    System.out.printf("%d\n%d\n%d\n",ben_share,bb_share,p_share);
+    
+}
+
+    }
