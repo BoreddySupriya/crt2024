@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    
+int age,weight;
+    float hemoglobin;
+    scanf("%d\n%d",&age,&weight);
+    scanf("\n%f",&hemoglobin);
+    if(age>=18 && weight>=45 && hemoglobin>=5.5)
+    {
+        printf("He or She can donate blood");
+        
+    }
+    else
+    {
+        printf("He or She unable to donate blood");
+}
+    return 0;
+}
