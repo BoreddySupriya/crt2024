@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner s=new Scanner(System.in);
+        String billAmount=s.nextLine();
+        s.close();
+        int discount=0;
+        for(char ch:billAmount.toCharArray())
+        {
+            int digit=Character.getNumericValue(ch);
+            if(digit%2!=0)
+            {
+                discount+=digit;
+            }
+        }
+        System.out.println(discount);
+    }
+}
