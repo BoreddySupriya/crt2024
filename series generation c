@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+        
+        int i,n,r=7;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d ",r);
+            r=r+3;
+        }
+        else
+        {
+            printf("%d ",r);
+            r=r-2;
+        }
+    }
+    return 0;
+}
