@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   
+        int min,max,i,total=0;
+    scanf("%d\n%d",&min,&max);
+    for(i=min;i<=max;i++)
+    {
+        total=total+i;
+    
+    }
+    printf("%d",total);
+    
+    return 0;
+}
