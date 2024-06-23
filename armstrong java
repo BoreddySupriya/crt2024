@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+
+        int n,r=0,temp,d,s;
+    scanf("%d",&n);
+    s=n;
+    temp=log10(n)+1;
+    for(int i=1;i<=temp;i++)
+    {
+        d=n%10;
+        r=r+pow(d,temp);
+        n=n/10;
+    }
+    if(r==s)
+        printf("Yes");
+    else
+        printf("No");
+   
+    return 0;
+}
