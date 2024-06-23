@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scanner=new Scanner(System.in);
+        int num1=scanner.nextInt();
+         int num2= scanner.nextInt();
+        scanner.close();
+        long sum= sumOfRange(num1, num2);
+        System.out.println(sum);
+    }
+    public static long sumOfRange(int min, int max)
+    {
+    return sumUpTo(max)-sumUpTo(min-1);
+}
+public static long sumUpTo(int n)
+{
+    return (long) n * (n+1) / 2;
+}
+        
+    
+}
