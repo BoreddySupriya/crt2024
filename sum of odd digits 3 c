@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+int n,d,s,c=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+     d=n%10;
+     n=n/10;
+     if(d%2==0)
+     {
+         s=0;
+     }
+        else
+        {
+          c=c+d;
+        }
+    }
+    int t=c+s;
+    printf("%d",t);
+    return 0;
+}
