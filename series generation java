@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        s.close();
+        int oddTerm=7;
+        int evenTerm=5;
+        StringBuilder series=new StringBuilder();
+        for(int i=0;i<n;i++)
+        {
+            if(i%2==0)
+            {
+                series.append(oddTerm).append(" ");
+            oddTerm +=1;
+        }
+        else
+        {
+            series.append(evenTerm).append(" ");
+            evenTerm +=1;
+        }
+        }
+    System.out.println(series.toString().trim());
+        
+    }
+}
