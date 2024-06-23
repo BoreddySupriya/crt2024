@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int q,p;
+    scanf("%d\n%d",&q,&p);
+    int a=q*p;
+    if(q>200)
+    {
+        
+      float total=a-a*20/100;
+        float g=total*18/100;
+      float netamount=total+g;
+       printf("Quantity Ordered %d",q);
+       printf("\nPrice per item is Rs.%d",p);
+       printf("\nTotal Amount = Rs.%d",a);
+       printf("\nDiscount Earned = Rs.%.1f",(float)(a*20/100));
+       printf("\nAmount after Discount - Rs.%.1f",total); 
+       printf("\nGST - Rs.%.1f",g);
+       printf("\nNet Amount Payable is Rs.%.1f",netamount);
+    }
+    else
+    {
+        float g2=a*18/100;
+       printf("Quantity Ordered %d",q);
+       printf("\nPrice per item is Rs.%d",p);
+       printf("\nTotal Amount = Rs.%d",a);
+       printf("\nGST - Rs.%.1f",g2);
+       printf("\nNet Amount Payable is Rs.%.1f",(a+g2)); 
+    }
+}
+    
