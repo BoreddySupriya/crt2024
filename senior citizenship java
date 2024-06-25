@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        char a=s.next().charAt(0);
+        int b=s.nextInt();
+        if((a==77||a==109)&&(b>=60))
+            System.out.println("Senior Citizen");
+        else if((a==70||a==102)&&(b>=58))
+                System.out.println("Senior Citizen");
+                else
+                System.out.println("Not A Senior Citizen");
+    }
+}
