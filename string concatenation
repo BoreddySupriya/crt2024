@@ -1,0 +1,13 @@
+import java.util.*;
+class Test
+{
+public static void main(String args[])
+{
+String str1="sup"; 
+String str2="buj"; 
+String str3=str1+str2;
+System.out.println(str3);
+}
+
+}
+		
