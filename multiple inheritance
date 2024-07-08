@@ -41,7 +41,7 @@ class Daughter extends Father
 {
 String dname;
 int p3;
-void getDaughter(String fname,int p3)
+void getDaughter(String dname,int p3)
 {
 this.dname=dname;
 this.p3=p3;
