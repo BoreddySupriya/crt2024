@@ -1,0 +1,15 @@
+
+
+class Test 
+{
+public static void main(String args[])
+{
+int a=316;            //Auto-boxing
+Integer b=a;
+System.out.println(b);
+Double c=34.67;
+double d=c;                //Auto-unboxing
+System.out.println(d);
+
+}
+}
