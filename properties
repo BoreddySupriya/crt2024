@@ -1,0 +1,27 @@
+steps:
+create a notepad file named with abc.txt
+Enter values for ex: a=100 ,b=200
+save the file
+Create a java file
+
+Program:
+import java.util.*;
+import java.io.*;
+
+class Test
+{
+public static void main(String args[])  throws Exception     
+{
+FileInputStream fis=new FileInputStream("abc.txt");
+Properties p=new Properties();
+p.load(fis);
+String x=p.getProperty("first");
+String y=p.getProperty("second");
+int a,b,c;
+a=Integer.parseInt(x);
+b=Integer.parseInt(y);
+c=a+b;
+System.out.println(c);
+fis.close();
+}
+}
